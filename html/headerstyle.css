@@ -1,0 +1,20 @@
+#logoi{
+    padding-top: 20px;
+    width: 400px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem #cfc9c9);
+}
+
+#logol{
+
+    padding-top: 25px;
+    width: 600px;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+h3{
+    padding: 10px;
+    color:#FFBCB3;
+    text-shadow: 0 0 0.75rem #cfc9c9;
+    background-color: #FFFFFF;
+}
