@@ -1,28 +1,100 @@
 @font-face{
     font-family: 'poppins';
-    src: url(./poppins.ttf);
+    src: url(./fonts/poppins.ttf);
 }
 
-*{
+body {
+    margin: 0;
     font-family: 'poppins';
+    background-color: #85C7D0;
 }
 
-#background{
-    background-image: url("./img/nkbk-fondop.png");
-    background-repeat: repeat;
+.background{
+    background-image: url("../img/nkbk-fondop.png");
+    background-repeat: repeat repeat;
     background-size: contain;
     background-position: center;
-    height: 200px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#logol{
+.logoi{
+    margin-top: 20px;
+    margin: 20px;
     width: 400px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem #2F1739);
 }
 
-.img{
+.logol{
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.background div{
+    padding: 0px 0px 0px 9px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    
+}
+
+.slogan{
+    color:#FFBCB3;
+    background-color: #FFFFFF;
+    padding: 0px 5px 0px 5px;
+    border-radius: 50px;
+}
+
+.menu {
+    position: fixed;
+    left: -200px; /* Oculta el menú fuera del área visible */
+    top: 0;
     width: 200px;
+    height: 100%;
+    background-color: #FEBD63;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease; /* Agrega una transición suave */
+    z-index: 1000;
+    overflow-y: auto;
+    filter: drop-shadow(0 0 0.75rem #c2c2c2);
+}
+
+.menu-open {
+    left: 0; /* Muestra el menú cuando tiene la clase menu-open */
+}
+
+.menu-toggle {
+    position: fixed; /* Asegura que el botón sea siempre visible */
+    left: 20px; /* Ajusta la posición del botón según sea necesario */
+    top: 20px; /* Ajusta la posición del botón según sea necesario */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1001; /* Asegura que el botón esté por encima del menú */
+}
+
+.menu-list {
+    list-style: none;
+    padding: 30px 0px 0px 0px;
+
+}
+
+.menu-list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.menu-list a:hover {
+    background-color: #ffcb81;
 }

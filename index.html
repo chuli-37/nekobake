@@ -3,38 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nekobake: Pasteleria</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nekobake | Pastelería</title>
+    <meta name="description" content="En Nekobake, fusionamos el arte de la pastelería con la ternura de los gatitos. Déjate seducir por nuestra exquisita variedad de pasteles, tartas, cupcakes y postres especiales, cada bocado es una experiencia única en un ambiente donde los dulces y los ronroneos se mezclan armoniosamente.">
+    <link rel="stylesheet" href="index.css">
     <link rel="favicon icon" href="./img/nkbk-logoi.png">
 <body>
     <header>
         <div id="background">
-            <img src="./img/nkbk-logol.png" alt="logo" id="logol">
-            <h3 id="slogan">"Deja que tu paladar se ponga gatuno"</h3>
+            <img id="logoi" src="../img/nekobake.jpeg" alt="logo" id="logoi">
+            <img id="logol" src="../img/nkbk-logol.png" alt="logo" id="logol">
+            <h3 id="slogan">Deja que tu paladar se ponga gatuno</h3>
         </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./menu.html">Menú</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+        <div class="menu">
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+            <ul class="menu-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Destacados</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Dónde Encontrarnos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Agradecimientos</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
-        <section id="inicio">
-            <div>
-                <img src="./img/nkbk-logoi.png" alt="logo imagen de nekobake">
-            </div>
-            <div>
-                <p>
-                    ¡Bienvenidos a Nekobake, el paraíso para amantes de los dulces y los gatitos! En nuestra pastelería, fusionamos la dulzura de los postres con la ternura de nuestros adorables amigos felinos. En Nekobake, no solo encontrarás exquisitos pasteles, galletas y cupcakes, sino también la compañía juguetona y reconfortante de nuestros residentes peludos.
-                </p>
-                <p>
-                    En Nekobake, cada creación tiene un toque especial, elaborado con amor y pasión por la repostería. Nuestro objetivo es ofrecerte una experiencia única donde puedas deleitar tus sentidos y llenar tu corazón de felicidad, tanto con nuestros deliciosos postres como con la adorable compañía de nuestros amigos peludos.
-                </p>
+        <section id="destacados">
+            <h2>Colección Felina Salvaje</h2>
+            <div class="slider-frame">
+                <ul>
+                    <li>
+                        <div class="slide-item">
+                            <img class="img" src="./img/t-avellana.png" alt="Tarta de chocolate">
+                        </div>
+                        <div class="slide-content">
+                            <h4>Tarta de Chocolate y Avellanas</h4>
+                            <p>Base de bizcocho de chocolate con crema de avellanas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-item">
+                            <img class="img" src="./img/t-manzana.png" alt="Tarta de manzana">
+                        </div>
+                        <div class="slide-content">
+                            <h4>Tarta de Manzana y Canela</h4>
+                            <p>Delicada tarta con capas de manzanas frescas y canela, envueltas en una masa hojaldrada y horneada hasta alcanzar una perfección dorada.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-item">
+                            <img class="img" src="./img/p-taroycoco.png" alt="Pastel de taro">
+                        </div>
+                        <div class="slide-content">
+                            <h4>Pastel de Taro y Coco</h4>
+                            <p>Exótico pastel de taro y coco con una textura suave y cremosa, perfectamente equilibrado entre lo dulce y lo tropical.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-item">
+                            <img class="img" src="./img/t-limonylav.png" alt="Tarta de limón">
+                        </div>
+                        <div class="slide-content">
+                            <h4>Tarta de Limón y Lavanda</h4>
+                            <p>Refrescante tarta con un relleno de crema de limón y un toque de lavanda, todo sobre una base de masa quebrada.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide-item">
+                            <img class="img" src="./img/t-pyf.png" alt="Tarta de pistacho y frambuesa">
+                        </div>
+                        <div class="slide-content">
+                            <h4>Tarta de Pistacho y Frambuesa</h4>
+                            <p>Deliciosa tarta de pistacho y frambuesa, rellena de crema de pistacho y un toque de frambuesa.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section id="menu">
+        <section class="catalogo">
             <div>
                 <h2>Menú</h2>
                 <p>
@@ -324,5 +372,6 @@
             <p>©2024 Nekobake. Todos los derechos reservados.</p>
         </div>
     </footer> 
+    <script src="script.js"></script>
 </body>
 </html>
