@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div class="background">
             <img class="logoi" src="../img/nekobake.jpeg" alt="logo imagen"">
             <div><img class="logol" src="../img/nkbk-logol.png" alt="logo letras"></div>
@@ -20,16 +20,349 @@
         <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
         <div class="menu" id="menu">
             <ul class="menu-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Destacados</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destacados">Destacados</a></li>
                 <li><a href="#">Catálogo</a></li>
                 <li><a href="#">Quiénes somos</a></li>
                 <li><a href="#">Dónde encontrarnos</a></li>
                 <li><a href="#">Agradecimientos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
-        <script src="script.js"></script>
     </nav>
+    <main>
+        <section id="destacados">
+            <h2>Destacados</h2>
+            <p>Nuestra colección: "Felina Salvaje"<p>
+            <div class="carousel-container">
+                <div class="carousel">
+                  <div class="carousel-item">
+                    <img class="img" src="./img/p-taroycoco.png" alt="Pastel de taro y coco">
+                    <h3>Pastel de Taro y Coco</h3>
+                    <p>Exótico pastel de taro y coco con una textura suave y cremosa, perfectamente equilibrado entre lo dulce y lo tropical.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img" src="./img/p-zanahoria.png" alt="Pastel de zanahoria">
+                    <h3>Pastel de Zanahoria</h3>
+                    <p>Bizcocho de zanahoria con glaseado de queso crema y nueces.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img" src="./img/t-pyf.png" alt="Tarta de pistacho y frambuesa">
+                    <h3>Tarta de Pistacho y Frambuesa</h3>
+                    <p>Armoniosa combinación de pistachos crujientes y frambuesas Jugosas sobre una base de masa quebrada, un placer para el palada.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img" src="./img/t-higo.png" alt="Tarta de queso">
+                    <h3>Tarta de Queso de Cabra e Higos</h3>
+                    <p>Elegante tarta con un relleno cremoso de queso de cabra y higos frescos, sobre una base de galleta de almendra.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img" src="./img/c-lavymiel.png" alt="Cupcake de frutilla">
+                    <h3>Cupcake de Lavanda y Miel</h3>
+                    <p>Bizcocho de vainilla con glaseado de lavanda y miel.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img" src="./img/c-lichiyrosa.png" alt="Cupcake de lichi y rosa">
+                    <h3>Cupcake de Lichi y Rosa</h3>
+                    <p>Bizcocho de vainilla con glaseado de lichi y rosa.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="catalogo">
+            <h2>Catálogo</h2>
+            <p>Disfruta de nuestra colección de pasteles, tartas, cupcakes y postres especiales, cada uno elaborado con amor y
+                creatividad para deleitar tus sentidos.</p>
+            <div class="catalog-index">
+                <ul>
+                    <li><a href="#pasteles">Pasteles</a></li>
+                    <li><a href="#tartas">Tartas</a></li>
+                    <li><a href="#cupcakes">Cupcakes</a></li>
+                    <li><a href="#galletas">Galletas</a></li>
+                    <li><a href="#postres">Postres Especiales</a></li>
+                </ul>
+            </div>
+            <div class="catalog">
+                <div class="category">
+                    <h2 id="pasteles">Pasteles</h2>
+                    <div class="card">
+                        <img class="img" src="./img/p-chocolate.png" alt="Pastel de chocolate">
+                        <h4>Pastel de Chocolate</h4>
+                        <p>Bizcocho de chocolate con ganache y decorado con virutas de chocolate.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/p-frutilla.png" alt="Pastel de frutilla">
+                        <h4>Pastel de Frutilla</h4>
+                        <p>Bizcocho esponjoso relleno de crema y frutillas frescas.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/p-vainilla.png" alt="Pastel de vainilla">
+                        <h4>Pastel de Vainilla</h4>
+                        <p>Bizcocho suave con crema de vainilla y fruta fresca.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/p-limon.png" alt="Pastel de limón">
+                        <h4>Pastel de Limón</h4>
+                        <p>Bizcocho de limón con glaseado y ralladura de limón.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/p-zanahoria.png" alt="Pastel de zanahoria">
+                        <h4>Pastel de Zanahoria</h4>
+                        <p>Bizcocho de zanahoria con glaseado de queso crema y nueces.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/p-redvelvet.png" alt="Pastel red velvet">
+                        <h4>Pastel Red Velvet</h4>
+                        <p>Bizcocho de terciopelo rojo con glaseado de queso crema.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/p-taroycoco.png" alt="Pastel de taro">
+                        <h4>Pastel de Taro y Coco</h4>
+                        <p>Exótico pastel de taro y coco con una textura suave y cremosa, perfectamente equilibrado entre lo
+                            dulce y lo tropical.</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2 id="tartas">Tartas</h2>
+                    <div class="card">
+                        <img class="img" src="./img/t-ddl.png" alt="Tarta de dulce de leche">
+                        <h4>Tarta de Dulce de Leche</h4>
+                        <p>Base de galleta con dulce de leche y crema batida.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-frutilla.png" alt="Tarta de frutilla">
+                        <h4>Tarta de Frutilla</h4>
+                        <p>Base de masa quebrada con crema pastelera y frutillas frescas.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-limon.png" alt="Tarta de limón">
+                        <h4>Tarta de Limón o Lemon Pie</h4>
+                        <p>Base de masa quebrada con crema de limón y merengue.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-avellana.png" alt="Tarta de chocolate">
+                        <h4>Tarta de Chocolate y Avellanas</h4>
+                        <p>Base de bizcocho de chocolate con crema de avellanas.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-durazno.png" alt="Tarta de durazno">
+                        <h4>Tarta de Durazno</h4>
+                        <p>Masa sablé con crema de almendra y duraznos frescos.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-mango.png" alt="Tarta de mango">
+                        <h4>Tarta de Mango</h4>
+                        <p>Bizcocho de almendra con crema de mango y cubierta de mango.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-manzana.png" alt="Tarta de manzana">
+                        <h4>Tarta de Manzana y Canela</h4>
+                        <p>Delicada tarta con capas de manzanas frescas y canela, envueltas en una masa hojaldrada y horneada
+                            hasta alcanzar una perfección dorada.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-pyf.png" alt="Tarta de pistacho">
+                        <h4>Tarta de Pistacho y Frambuesa</h4>
+                        <p>Armoniosa combinación de pistachos crujientes y frambuesas jugosas sobre una base de masa quebrada,
+                            un placer para el paladar.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-higo.png" alt="Tarta de queso">
+                        <h4>Tarta de Queso de Cabra y Higos</h4>
+                        <p>Elegante tarta con un relleno cremoso de queso de cabra y higos frescos, sobre una base de galleta de
+                            almendra.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-limonylav.png" alt="Tarta de limón">
+                        <h4>Tarta de Limón y Lavanda</h4>
+                        <p>Refrescante tarta con un relleno de crema de limón y un toque de lavanda, todo sobre una base de masa
+                            quebrada.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/t-frutosrojos.png" alt="Tarta de vainilla">
+                        <h4>Tarta de Vainilla con Ganache de Chocolate Blanco y Frutos Rojos</h4>
+                        <p>Deliciosa tarta con un bizcocho de vainilla, ganache de chocolate blanco y una decoración de frutos
+                            rojos frescos.</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2 id="cupcakes">Cupcakes</h2>
+                    <div class="card">
+                        <img class="img" src="./img/c-chocolate.png" alt="Cupcake de chocolate">
+                        <h4>Cupcake de Chocolate</h4>
+                        <p>Bizcocho de chocolate con glaseado de chocolate.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-vainilla.png" alt="Cupcake de vainilla">
+                        <h4>Cupcake de Vainilla</h4>
+                        <p>Bizcocho de vainilla con glaseado de vainilla.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-frambuesa.png" alt="Cupcake de frambuesa">
+                        <h4>Cupcake de Frambuesa</h4>
+                        <p>Bizcocho de vainilla con glaseado de frambuesa.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-redvelvet.png" alt="Cupcake de red velvet">
+                        <h4>Cupcake de Red Velvet</h4>
+                        <p>Bizcocho de terciopelo rojo con glaseado de queso crema.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-caramelo.png" alt="Cupcake de caramelo">
+                        <h4>Cupcake de Caramelo</h4>
+                        <p>Bizcocho de caramelo con glaseado de caramelo.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-limon.png" alt="Cupcake de limón">
+                        <h4>Cupcake de Limón</h4>
+                        <p>Bizcocho de limón con glaseado de limón.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-menta.png" alt="Cupcake de menta">
+                        <h4>Cupcake de Menta</h4>
+                        <p>Bizcocho de chocolate con glaseado de menta.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-almendra.png" alt="Cupcake de almendra">
+                        <h4>Cupcake de Almendra</h4>
+                        <p>Bizcocho de almendra con glaseado de almendra.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-lavymiel.png" alt="Cupcake de lavanda y miel">
+                        <h4>Cupcake de Lavanda y Miel</h4>
+                        <p>Bizcocho de vainilla con glaseado de lavanda y miel.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-lichiyrosa.png" alt="Cupcake de lichi y rosa">
+                        <h4>Cupcake de Lichi y Rosa</h4>
+                        <p>Bizcocho de vainilla con glaseado de lichi y rosa.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/c-chocolatebyfram.png" alt="Cupcake de chocolate blanco y frambuesa">
+                        <h4>Cupcake de Chocolate Blanco y Frambuesa</h4>
+                        <p>Bizcocho de chocolate blanco con glaseado de frambuesa.</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2 id="galletas">Galletas</h2>
+                    <div class="card">
+                        <img class="img" src="./img/g-chips.png" alt="Galleta de chocolate chip">
+                        <h4>Galleta de Chocolate Chip</h4>
+                        <p>Galleta crujiente con chips de chocolate.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-avena.png" alt="Galleta de avena y pasas">
+                        <h4>Galleta de Avena y Pasas</h4>
+                        <p>Galleta de avena con pasas y nueces.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-miel.png" alt="Galleta de miel">
+                        <h4>Galleta de Miel</h4>
+                        <p>Galleta sabrosa con miel.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-manteca.png" alt="Galleta de mantequilla">
+                        <h4>Galleta de Mantequilla</h4>
+                        <p>Galleta suave y mantecosa.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-frutos.png" alt="Galleta de chocolate blanco">
+                        <h4>Galleta de Chocolate Blanco</h4>
+                        <p>Galleta de chocolate blanco con trozos de frutas secas.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-limon.png" alt="Galleta de limón">
+                        <h4>Galleta de Limón</h4>
+                        <p>Galleta de limón con glaseado de limón.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-jengibre.png" alt="Galleta de jengibre">
+                        <h4>Galleta de Jengibre</h4>
+                        <p>Galleta de jengibre con decoración de glaseado.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-avellanas.png" alt="Galleta de nutella">
+                        <h4>Galleta de Nutella</h4>
+                        <p>Galleta rellena de crema de avellanas.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/g-almendra.png" alt="Galleta de coco">
+                        <h4>Galleta de Coco y Almendra</h4>
+                        <p>Galleta de coco con almendra picada.</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2 id="postres">Postres Especiales</h2>
+                    <div class="card">
+                        <img class="img" src="./img/chessecake.png" alt="Cheesecake de frambuesa">
+                        <h4>Cheesecake de Frambuesa</h4>
+                        <p>Cheesecake con coulis de frambuesa.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/mousse.png" alt="Mousse de chocolate">
+                        <h4>Mousse de Chocolate</h4>
+                        <p>Mousse de chocolate negro con chantilly.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/flan.png" alt="Flan">
+                        <h4>Flan de Vainilla</h4>
+                        <p>Flan cremoso de vainilla con caramelo.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/catalana.png" alt="Crema Catalana">
+                        <h4>Crema Catalana</h4>
+                        <p>Crema pastelera caramelizada con aroma de naranja.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/tiramisu.png" alt="Tiramisú">
+                        <h4>Tiramisú</h4>
+                        <p>Postre italiano con capas de bizcocho de café y crema de mascarpone.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/bombasdecrema.png" alt="Bombas de crema">
+                        <h4>Bombas de crema</h4>
+                        <p>Bolitas de masa rellenas de crema y cubiertas de chocolate.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/crepes.png" alt="Crepes con nutella">
+                        <h4>Crepes con Nutella</h4>
+                        <p>Crepes rellenos de Nutella y plátano.</p>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./img/brownie.png" alt="Brownie de Nuez">
+                        <h4>Brownie de Nuez</h4>
+                        <p>Brownie denso con dulce de leche y nueces tostadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h2>Nekobake</h2>
+            <p>Deja que tu paladar se ponga gatuno</p>
+        </div>
+        <div>
+            <h3 id="contacto">Contacto</h3>
+            <p>Correo electrónico: contacto@nekobake.com</p>
+            <p>Teléfonos:</p>
+            <ul>
+                <li>+54 9 00 1234-5678</li>
+                <li>+54 9 11 2345-6789</li>
+            </ul>
+            <p>Dirección: Av. Principal 1234</p>
+        </div>
+        <div>
+            <h3>Agradecimientos</h3>
+            <p>¡Gracias por visitar Nekobake! Si tienes alguna duda o consulta, no dudes en contactarnos.</p>
+        </div>
+        <div>
+            <h3>Legal</h3>
+            <p> Política de privacidad</p>
+            <p>Términos y condiciones de uso</p>
+            <p>©2024 Nekobake. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

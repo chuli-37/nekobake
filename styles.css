@@ -98,3 +98,73 @@ body {
 .menu-list a:hover {
     background-color: #ffcb81;
 }
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto */
+  }
+  
+  .carousel-item img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px;
+  }
+  
+  .carousel-item h3,
+  .carousel-item p {
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  }
+  
+
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
