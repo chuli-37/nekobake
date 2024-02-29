@@ -1,6 +1,6 @@
 function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('menu-open');
+  var menu = document.querySelector('.menu');
+  menu.classList.toggle('menu-open');
 }
 const carousel = document.querySelector('.carousel');
 const carouselWidth = carousel.scrollWidth - carousel.clientWidth;
