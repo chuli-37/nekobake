@@ -100,14 +100,14 @@ body {
 }
 
 .carousel-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   
   .carousel {
     display: flex;
-    overflow-x:hidden;
     scroll-snap-type: x mandatory;
+    overflow-x: hidden;
   }
   
   .carousel-item {
@@ -120,21 +120,30 @@ body {
   }
   
   .carousel-item img {
-    max-width: 35%;
+    max-width: 450px;
     height: auto;
     display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente */
     border-radius: 8px;
   }
-  
-  .carousel-item h3,
-  .carousel-item p {
-    margin: 10px 0;
-    overflow: hidden;
+
+  .carousel-item img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+
+  .carousel-item h3{
+    font-size: 1.5rem;
+    margin: 25px 0px 0px 0px;
     text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
   }
-  
+
+  a{
+    text-decoration: none;
+    color: #2F1739;
+  }
 
   .catalog {
     display: grid;
@@ -162,9 +171,24 @@ body {
   .card-content h3 {
     margin-top: 0;
     font-size: 1.5rem;
+    cursor: pointer;
   }
   
-  .card-content p {
-    margin: 10px 0;
-    font-size: 1rem;
-  }
+
+main{
+  padding: 0px 30px;
+  color: #2F1739;
+}
+
+p{
+  text-align: center;
+  font-size: 150%;
+  margin: 0px;
+  color: #673d79;
+}
+
+h2{
+  font-size: 200%;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
